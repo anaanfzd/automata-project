@@ -1,0 +1,103 @@
+Start testing: Oct 12 02:29 India Standard Time
+----------------------------------------------------------
+1/1 Testing: TOC_Algorithms_Verification
+1/1 Test: TOC_Algorithms_Verification
+Command: "C:/PROJECTS/Automata/build/AutomataViz_Tests.exe"
+Directory: C:/PROJECTS/Automata/build
+"TOC_Algorithms_Verification" start time: Oct 12 02:29 India Standard Time
+Output:
+----------------------------------------------------------
+========================================================
+  AutomataViz Automated Algorithm & Verification Suite
+========================================================
+
+=== 1. Regex Validation Tests ===
+  [PASS] Valid single symbol 'a'
+  [PASS] Valid union 'a|b'
+  [PASS] Valid concatenation 'ab'
+  [PASS] Valid Kleene star 'a*'
+  [PASS] Valid parenthesized star '(a|b)*'
+  [PASS] Valid complex regex '(a|b)*abb'
+  [PASS] Valid nested parens '((a|b)*c)+'
+  [PASS] Reject empty string
+  [PASS] Reject unmatched opening '('
+  [PASS] Reject unmatched closing ')'
+  [PASS] Reject empty parentheses '()'
+  [PASS] Reject leading union '|a'
+  [PASS] Reject trailing union 'a|'
+  [PASS] Reject consecutive union 'a||b'
+  [PASS] Reject leading Kleene star '*a'
+  [PASS] Reject subexpression starting with '|'
+
+=== 2. Tokenization & Postfix Conversion Tests ===
+  [PASS] Infix 'ab' -> Postfix 'ab.'
+  [PASS] Infix 'a|b' -> Postfix 'ab|'
+  [PASS] Infix 'a*' -> Postfix 'a*'
+  [PASS] Infix '(a|b)*' -> Postfix 'ab|*'
+  [PASS] Infix '(a|b)*abb' -> Postfix 'ab|*a.b.b.'
+
+=== 3. Thompson Construction Tests ===
+  [PASS] Thompson NFA generated for 'a'
+  [PASS] Valid start state for 'a'
+  [PASS] Non-empty final states for 'a'
+  [PASS] State count >= 2 for 'a'
+  [PASS] Thompson NFA generated for 'a|b'
+  [PASS] Valid start state for 'a|b'
+  [PASS] Non-empty final states for 'a|b'
+  [PASS] State count >= 2 for 'a|b'
+  [PASS] Thompson NFA generated for 'ab'
+  [PASS] Valid start state for 'ab'
+  [PASS] Non-empty final states for 'ab'
+  [PASS] State count >= 2 for 'ab'
+  [PASS] Thompson NFA generated for 'a*'
+  [PASS] Valid start state for 'a*'
+  [PASS] Non-empty final states for 'a*'
+  [PASS] State count >= 2 for 'a*'
+  [PASS] Thompson NFA generated for '(a|b)*'
+  [PASS] Valid start state for '(a|b)*'
+  [PASS] Non-empty final states for '(a|b)*'
+  [PASS] State count >= 2 for '(a|b)*'
+  [PASS] Thompson NFA generated for '(a|b)*abb'
+  [PASS] Valid start state for '(a|b)*abb'
+  [PASS] Non-empty final states for '(a|b)*abb'
+  [PASS] State count >= 2 for '(a|b)*abb'
+
+=== 4. Subset Construction & DFA Minimization Tests ===
+  [PASS] Subset construction succeeded for '(a|b)*abb'
+  [PASS] DFA has states
+  [PASS] DFA has start state
+  [PASS] DFA has accepting states
+  [PASS] DFA Minimization succeeded for '(a|b)*abb'
+  [PASS] Minimized states <= Original states
+  [PASS] Canonical minimized state count for '(a|b)*abb' is 4
+
+=== 5. String Acceptance Simulation Tests ===
+  [PASS] Accept 'abb'
+  [PASS] Accept 'aabb'
+  [PASS] Accept 'ababb'
+  [PASS] Accept 'babb'
+  [PASS] Accept 'ababbabb'
+  [PASS] Accept 'bbabb'
+  [PASS] Reject 'ab' (missing final 'b')
+  [PASS] Reject 'aaa'
+  [PASS] Reject empty string ''
+  [PASS] Reject 'b'
+  [PASS] Reject 'abba'
+  [PASS] a* accepts empty string ''
+  [PASS] a* accepts 'a'
+  [PASS] a* accepts 'aaaa'
+  [PASS] a* rejects 'b'
+  [PASS] a* rejects 'ab'
+
+========================================================
+  Test Results: 68 / 68 Passed (100%)
+========================================================
+<end of output>
+Test time =   0.18 sec
+----------------------------------------------------------
+Test Passed.
+"TOC_Algorithms_Verification" end time: Oct 12 02:29 India Standard Time
+"TOC_Algorithms_Verification" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 12 02:29 India Standard Time

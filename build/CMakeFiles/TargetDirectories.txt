@@ -1,0 +1,6 @@
+C:/PROJECTS/Automata/build/CMakeFiles/AutomataCore.dir
+C:/PROJECTS/Automata/build/CMakeFiles/AutomataViz.dir
+C:/PROJECTS/Automata/build/CMakeFiles/AutomataViz_Tests.dir
+C:/PROJECTS/Automata/build/CMakeFiles/test.dir
+C:/PROJECTS/Automata/build/CMakeFiles/edit_cache.dir
+C:/PROJECTS/Automata/build/CMakeFiles/rebuild_cache.dir
